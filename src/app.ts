@@ -5,7 +5,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json()); // parser to allows us accept json data like req.body
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.get("/", (req: Request, res: Response) => {
   res.send({ message: "Hello World!" });
