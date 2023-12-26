@@ -4,6 +4,7 @@ import express, { Request, Response } from "express";
 dotenv.config();
 
 const app = express();
+app.use(express.json()); // parser to allows us accept json data like req.body
 const port = process.env.PORT;
 
 app.get("/", (req: Request, res: Response) => {
