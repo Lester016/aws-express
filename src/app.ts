@@ -8,7 +8,7 @@ app.use(express.json()); // parser to allows us accept json data like req.body
 const port = process.env.PORT || 3000;
 
 app.get("/", (req: Request, res: Response) => {
-  res.send({ message: "Hello World!" });
+  res.send({ message: "Tae ng  kalabaw!" });
 });
 
 app.get("/health-check", (req: Request, res: Response) => {
